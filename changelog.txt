@@ -1,4 +1,35 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.9.13
+Date: 2026-11-03
+  Bugfixes:
+    - Prevent a crash when a migration removes a player before nav beacon storage is initialized. https://github.com/nicholasgower/planet-muluna/issues/526
+---------------------------------------------------------------------------------------------------
+Version: 2.9.12
+Date: 2026-11-03
+  Bugfixes:
+    - Prevent a crash from an empty muluna-nanofoamed-polymers trigger icon list. https://github.com/nicholasgower/planet-muluna/issues/524
+---------------------------------------------------------------------------------------------------
+Version: 2.9.11
+Date: 2026-11-03
+  Bugfixes:
+    - Allow inserters to remove robots from burner roboports. https://github.com/nicholasgower/planet-muluna/issues/522
+---------------------------------------------------------------------------------------------------
+Version: 2.9.10
+Date: 2026-11-03
+  Bugfixes:
+    - Re-apply the compound wire retry timer state after loading a save. https://github.com/nicholasgower/planet-muluna/issues/520
+---------------------------------------------------------------------------------------------------
+Version: 2.9.9
+Date: 2026-11-02
+  Optimizations:
+    - Cut per-step allocations and storage writes from walking particles.
+    - Decide the nav beacon alert once per player instead of once per radar.
+    - Index compound entity children for O(1) parent lookups.
+    - Skip unchanged telescope combinator filter updates.
+    - Stop the idle wire retry timer and unused GUI event registrations.
+  Bugfixes:
+    - Prevent a crash when a compound subentity outlives its removed parent.
+---------------------------------------------------------------------------------------------------
 Version: 2.9.8
 Date: 2026-11-01
   Bugfixes:
